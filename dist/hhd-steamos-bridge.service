@@ -1,0 +1,14 @@
+# Unite UTILISATEUR : /etc/systemd/user/ ou ~/.config/systemd/user/
+[Unit]
+Description=HHD <-> steamos-manager D-Bus remote (TDP / frequence GPU)
+BindsTo=steamos-manager.service
+After=steamos-manager.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/hhd-steamos-bridge
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=steamos-manager.service

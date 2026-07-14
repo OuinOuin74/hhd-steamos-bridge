@@ -1,0 +1,10 @@
+# /etc/steamos-manager/remotes.d/hhd.toml
+# Un nom de bus PAR interface : contourne la course d'enregistrement
+# de steamos-manager 26.3.0 (deux load_tasks sur un meme NameOwnerChanged).
+[TdpLimit1]
+bus_name = "com.steampowered.HhdBridge.Tdp"
+object_path = "/com/steampowered/HhdBridge"
+
+[GpuPerformanceLevel1]
+bus_name = "com.steampowered.HhdBridge.Gpu"
+object_path = "/com/steampowered/HhdBridge"
