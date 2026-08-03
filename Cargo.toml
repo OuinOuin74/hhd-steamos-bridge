@@ -1,10 +1,6 @@
 [package]
 name = "steamos-manager-hhd-bridge"
-<<<<<<< HEAD
-version = "0.2.3"
-=======
 version = "0.2.4"
->>>>>>> 5e7d7aa (v0.2.4: renomme l'unite en steamos-manager-hhd-bridge.service)
 edition = "2024"
 
 [dependencies]
